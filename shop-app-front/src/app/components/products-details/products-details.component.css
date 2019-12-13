@@ -1,0 +1,20 @@
+/*.example-container {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*}*/
+
+/*.example-container > * {*/
+/*  width: 100%;*/
+/*}*/
+.form {
+  width: 100%;
+  height: 100%;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.login {
+  left: 392px;
+}

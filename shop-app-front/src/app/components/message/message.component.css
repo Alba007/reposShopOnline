@@ -1,0 +1,26 @@
+.accept {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+}
+
+.delete {
+  background-color: darkred; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  float: right;
+  font-size: 13px;
+}
+
+.text {
+  text-align: center;
+}

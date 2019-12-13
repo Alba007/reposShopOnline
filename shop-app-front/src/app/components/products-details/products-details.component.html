@@ -1,0 +1,38 @@
+<div class="example-container">
+  <form [formGroup]="formGroup" class="form">
+    <mat-form-field>
+      <label>
+        <input matInput placeholder="Title" formControlName="title">
+      </label>
+    </mat-form-field>
+    <br/>
+    <mat-form-field>
+      <label>
+        <textarea matInput placeholder="Description" formControlName="description"></textarea>
+      </label>
+    </mat-form-field>
+
+    <mat-form-field>
+      <label>
+        <input matInput placeholder="Review" formControlName="review">
+      </label>
+    </mat-form-field>
+    <mat-form-field>
+      <label>
+        <textarea matInput placeholder="Specification" formControlName="specification"></textarea>
+      </label>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Category</mat-label>
+      <mat-select formControlName="category">
+        <mat-option *ngFor="let categ of categories"  [value]="categ.id" >
+          {{categ.title}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button class="file-upload" (click)="uplaod(file)">File upload</button>
+    <input #hidden placeholder="Image" #file (change)="onFileSelected($event)" style="display: none" type="file">
+    <br/>
+    <button mat-raised-button color="primary" class="login" (click)="save()">Save</button>
+  </form>
+</div>

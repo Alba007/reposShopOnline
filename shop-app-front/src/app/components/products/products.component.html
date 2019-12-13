@@ -1,0 +1,15 @@
+<app-navbar [data]="path"></app-navbar>
+<div class="background">
+  <div class="row">
+    <div class="column nature" *ngFor="let prod of products">
+      <div class="content" (click)="openDetails(prod.id)">
+        <img [src]="'data:image/png;base64,' + prod.image" alt="Mountains" style="width:100%">
+        <h4>{{prod.title}}</h4>
+        <p>{{prod.description}}</p>
+      </div>
+      <button *ngIf="showDelete" type="submit" class="deleteButton" (click)="deleteProduct(prod.id)"></button>
+      <a *ngIf="idOfProductsInChart.indexOf(prod.id)<0 && addProductCart " class="products" (click)="addToChart(prod.id)">Add to chart</a>
+    </div>
+  </div>
+  <button *ngIf="showDelete" class="add" (click)="openDetails(null)">ADD</button>
+</div>

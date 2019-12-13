@@ -1,0 +1,11 @@
+<app-navbar [data]="path"></app-navbar>
+<div class="background"></div>
+<div class="row">
+  <div class="column nature" *ngFor="let prod of products">
+    <div class="content" (click)="openImage(prod.image)">
+      <img [src]="'data:image/png;base64,' + prod.image" alt="Mountains" style="width:100%">
+      <h4>{{prod.title}}</h4>
+    </div>
+    <a class="products" (click)="removeFromBasket(prod.id)">Remove from the bastet</a>
+  </div>
+</div>

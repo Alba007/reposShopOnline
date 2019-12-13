@@ -1,0 +1,14 @@
+<app-navbar [data]="path"></app-navbar>
+<div class="background">
+  <div class="row">
+    <div class="column nature" *ngFor="let cat of categories">
+      <div class="content" (click)="addCategory(cat)">
+        <img [src]="'data:image/png;base64,' + cat.image" alt="Mountains" style="width:100%">
+        <h4>{{cat.title}}</h4>
+      </div>
+      <button *ngIf="showDelete" type="submit" class="deleteButton" (click)="deleteCategory(cat.id)"></button>
+      <a class="products" (click)="goToProductsByCatrgory(cat.id)">View products</a>
+    </div>
+  </div>
+  <button *ngIf="showDelete" class="add" (click)="addCategory(null)">ADD</button>
+</div>

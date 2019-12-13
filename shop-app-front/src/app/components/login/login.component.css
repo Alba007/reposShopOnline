@@ -1,0 +1,31 @@
+.mat-card-content {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.example-form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.example-full-width {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.mat-card-title {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.table {
+  text-align: center;
+}
+.mat-card-actions {
+  text-align: center;
+}
+.login {
+  margin: 0 auto;
+}

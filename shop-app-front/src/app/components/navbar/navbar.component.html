@@ -1,0 +1,7 @@
+<div class="topnav">
+  <a (click)="goToCategories()" [ngClass]="data == 'categories' ? 'active': 'normal'">Categories</a>
+  <a (click)="goToProducts()" [ngClass]="(data === 'products') ? 'active': 'normal'">Products</a>
+  <a *ngIf="showBasket" (click)="goToBasket()" [ngClass]="data == 'basket' ? 'active': 'normal'">Basket</a>
+  <div class="logout" (click)="logout()">Logout</div>
+</div>
+
